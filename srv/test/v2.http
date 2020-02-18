@@ -1,0 +1,7 @@
+### Read Business Partners
+http://localhost:3000/v2/sap/opu/odata/sap/IWBEP/GWSAMPLE_BASIC/BusinessPartnerSet
+### Read Sales Order
+http://localhost:3000/v2/sap/opu/odata/sap/IWBEP/GWSAMPLE_BASIC/SalesOrderSet
+### Read Business Partners and the Sales Orders
+# Returns: SQLITE_ERROR: no such table: GWSAMPLE_BASIC_SalesOrder
+http://localhost:3000/v2/sap/opu/odata/sap/IWBEP/GWSAMPLE_BASIC/BusinessPartnerSet?$expand=ToSalesOrders
